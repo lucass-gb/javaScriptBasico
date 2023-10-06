@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atribuindo valor em uma tag HTML por ID</title>
+</head>
+<body>
+    <p id="tx01">texto no parágrafo</p>
+    <script>
+        document.write("<h1>Sistema em JavaScript</h1>")
+        // javascript permite ler a pagina interia e instrangir com outros elementos,aqui estou interagindo com parágrafo acima,com o 'getelementByID'-o texto atribuido substitui o texto predeterminado na tag p-textcontent-atributo de get,este atributo permite interagir e alterar outros elemnetos
+        document.getElementById("tx01").textcontent = 'atribuindo o texto ao parágrafo com getElementByID';
+        document.getElementById("tx01").style.fontWeight ='bold';
+        document.getElementById("tx01").style.color = 'blue';
+    </script>
+</body>
+</html>
